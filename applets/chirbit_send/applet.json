@@ -1,0 +1,7 @@
+{
+    "name" : "Chirbit",
+    "description" : "Create a Chirbit Dropbox in VBX!",
+    "type" : "voice",
+    "disabled" : false;
+}
+
