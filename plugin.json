@@ -1,0 +1,13 @@
+{
+    "name" : "Chirbit Suite",
+    "author" : "Andrew Watson <andy@othernum.com>",
+    "description" : "Send Your VoiceMails to Chirbit",
+    "url" : "http://chirbit.com",
+    "disabled" : false,
+    "links" : [{
+                        "menu" : "setup",
+                        "url" : "ChirbitSettings",
+                        "script" : "ChirbitSettings/index.php",
+                        "label" : "Chirbit"
+                }]
+}
