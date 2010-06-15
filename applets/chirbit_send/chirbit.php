@@ -4,9 +4,9 @@
 
 $data = array(
     'username' => $username,
-    'api_key' => $API_KEY,
+    'pass' => $API_KEY,
     'filename' => $URL,
-    'filesource' => 'user',
+    'filesource' => 'twilio',
     'title' => $title,
     'latitude' => $lat,
     'longitude' => $long
