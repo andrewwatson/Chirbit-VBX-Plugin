@@ -13,6 +13,8 @@ if (isset($_REQUEST['savebutton'])) {
 
 	$chirbit_username = $_REQUEST['username'];
 	$chirbit_password = $_REQUEST['password'];
+
+	$message = "Settings Saved!";
 }
 
 
@@ -20,12 +22,15 @@ if (isset($_REQUEST['savebutton'])) {
 <div class="vbx-content-main">
     <?php $store = PluginStore::getKeyValues(); ?>
     <div class="vbx-content-menu vbx-content-menu-top">
-        <h2 class="vbx-content-heading">FourSquare Account</h2>
+        <h2 class="vbx-content-heading">Chirbit Credentials</h2>
     </div>
 
     <div class="vbx-content-container">
 		<div class="vbx-content-section">
         <h3>Store Your Credentials</h3>
+			<?php if (isset($message)) : ?>
+			<h3><?php echo $message; ?></h3>
+			<?php endif; ?>
 			<form action="" class="vbx-form">
 			<p style="width: 200px;">Username: <input name="username" size="30" value="<?php echo $chirbit_username; ?>"></p>
 			<p style="width: 200px;">Password: <input name="password" size="30" value="<?php echo $chirbit_password; ?>" type="password"></p>
