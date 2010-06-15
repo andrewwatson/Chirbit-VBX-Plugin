@@ -1,5 +1,6 @@
 <?php 
 	header("Content-type: text/xml\n"); 
+	error_reporting(E_NONE);
 	include("chirbit.php");
 
 	$user = AppletInstance::getUserGroupPickerValue('chirbit-controller');
