@@ -5,19 +5,20 @@
 $data = array(
     'username' => $username,
     'api_key' => $API_KEY,
-    'tags' => 'tag, post from phone, message,FTW!',
     'filename' => $URL,
-    'filesource' => 'twilio',
+    'filesource' => 'user',
     'title' => $title,
     'latitude' => $lat,
     'longitude' => $long
 );
 
 $c = curl_init();
-curl_setopt($c, CURLOPT_URL, "http://api.chirbit.com/chirbit/postChirbit.xml");
+curl_setopt($c, CURLOPT_URL, "https://api.chirbit.com/chirbit/postChirbit");
 curl_setopt($c, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($c, CURLOPT_POST, true);
 curl_setopt($c, CURLOPT_POSTFIELDS, $data);
+curl_setopt($c, CURLOPT_SSL_VERIFYPEER,false);
+
 $output = curl_exec($c);
 
 $info = curl_getinfo($c);
