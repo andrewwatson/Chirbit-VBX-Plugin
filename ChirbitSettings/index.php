@@ -32,10 +32,18 @@ if (isset($_REQUEST['savebutton'])) {
 			<h3><?php echo $message; ?></h3>
 			<?php endif; ?>
 			<form action="" class="vbx-form">
-			<p style="width: 200px;">Username: <input name="username" size="30" value="<?php echo $chirbit_username; ?>"></p>
-			<p style="width: 200px;">Password: <input name="password" size="30" value="<?php echo $chirbit_password; ?>" type="password"></p>
-			<button name="savebutton">SAVE</button>
+		<div class="vbx-input-container">
+			<label class="field-label">Username 
+				<input name="username" size="30" value="<?php echo $chirbit_username; ?>" class="medium text">
+			</label>
+		</div>
+		<div class="vbx-input-container">
+			<label class="field-label">Password 
+				<input name="password" size="30" value="<?php echo $chirbit_password; ?>" type="password" class="medium text">
+			</label>
+			<button name="savebutton" class="normal-button"><span>SAVE</span></button>
 			</form>
+		</div>
 		</div>
     </div>
 </div>
